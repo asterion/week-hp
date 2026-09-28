@@ -1,9 +1,5 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 //
-// Generated with AI for personal use.
-// Do NOT upload to extensions.gnome.org (EGO) unless you understand JavaScript
-// and can maintain this code.
-//
 // Week HP: a retro 2D platformer health bar in the GNOME Shell top panel.
 // It fills up from Monday to Friday; when Friday ends, the weekly goals are complete.
 
