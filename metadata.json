@@ -2,6 +2,7 @@
   "uuid": "week-hp@asterion",
   "name": "Week HP",
   "description": "Barra de vida estilo videojuego 2D que se llena de lunes a viernes. El viernes se cumplen las metas.",
+  "url": "https://github.com/asterion/week-hp",
   "version": 1,
   "shell-version": [
     "45",
