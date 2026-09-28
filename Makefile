@@ -15,12 +15,13 @@ locale/%/LC_MESSAGES/$(DOMAIN).mo: po/%.po
 # Regenera la plantilla y actualiza los .po con los textos nuevos
 pot:
 	xgettext --from-code=UTF-8 --language=JavaScript --add-comments=Translators \
-		--keyword=_ --package-name=$(DOMAIN) -o po/$(DOMAIN).pot extension.js
+		--keyword=_ --package-name=$(DOMAIN) -o po/$(DOMAIN).pot *.js
 	for po in po/*.po; do msgmerge --update --backup=none $$po po/$(DOMAIN).pot; done
 
 # Zip listo para extensions.gnome.org (compila los .po por su cuenta)
 pack:
-	gnome-extensions pack --force --podir=po .
+	gnome-extensions pack --force --podir=po \
+		--extra-source=indicator.js --extra-source=weekProgress.js --extra-source=icons --extra-source=LICENSE .
 
 clean:
 	rm -rf locale $(UUID).shell-extension.zip
