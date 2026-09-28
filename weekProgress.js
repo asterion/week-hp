@@ -10,6 +10,8 @@ export const WORK_DAYS = 5;
 // With 0 and 24 each day progresses over the whole 24 hours.
 const DAY_START_HOUR = 9;
 const DAY_END_HOUR = 18;
+// Friday is a short day: the weekly goal is reached at this hour
+const FRIDAY_END_HOUR = 13;
 
 /**
  * Work week progress at a given time.
@@ -25,8 +27,9 @@ export function getWeekProgress(now) {
         return {days: Array(WORK_DAYS).fill(1), today: null, total: 1};
 
     const hours = now.get_hour() + now.get_minute() / 60;
+    const endHour = weekday === WORK_DAYS - 1 ? FRIDAY_END_HOUR : DAY_END_HOUR;
     const todayFraction = Math.min(Math.max(
-        (hours - DAY_START_HOUR) / (DAY_END_HOUR - DAY_START_HOUR), 0), 1);
+        (hours - DAY_START_HOUR) / (endHour - DAY_START_HOUR), 0), 1);
 
     const days = Array.from({length: WORK_DAYS}, (_v, i) => {
         if (i < weekday)
