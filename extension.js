@@ -5,7 +5,7 @@
 // and can maintain this code.
 //
 // Week HP: barra de vida estilo videojuego 2D de plataformas en la barra superior
-// de GNOME Shell (45+). Se llena de lunes a viernes; al terminar el viernes se
+// de GNOME Shell (50). Se llena de lunes a viernes; al terminar el viernes se
 // cumplen las metas de la semana.
 
 import {Extension} from 'resource:///org/gnome/shell/extensions/extension.js';
