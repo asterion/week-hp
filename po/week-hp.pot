@@ -18,36 +18,36 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #. Translators: abbreviated weekday shown in the top bar
-#: extension.js:32
+#: indicator.js:32
 msgid "Mon"
 msgstr ""
 
 #. Translators: abbreviated weekday shown in the top bar
-#: extension.js:34
+#: indicator.js:34
 msgid "Tue"
 msgstr ""
 
 #. Translators: abbreviated weekday shown in the top bar
-#: extension.js:36
+#: indicator.js:36
 msgid "Wed"
 msgstr ""
 
 #. Translators: abbreviated weekday shown in the top bar
-#: extension.js:38
+#: indicator.js:38
 msgid "Thu"
 msgstr ""
 
 #. Translators: abbreviated weekday shown in the top bar
-#: extension.js:40
+#: indicator.js:40
 msgid "Fri"
 msgstr ""
 
-#: extension.js:128
-msgid "★ GOAL!"
+#: indicator.js:128
+msgid "GOAL!"
 msgstr ""
 
 #. Translators: weekday and week progress, e.g. "Wed 46%"
-#: extension.js:131
+#: indicator.js:131
 #, javascript-format
 msgid "%s %d%%"
 msgstr ""

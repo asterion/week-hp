@@ -4,11 +4,13 @@
     spacing: 6px;
 }
 
-.week-hp-tag {
-    font-family: monospace;
-    font-weight: bold;
-    font-size: 10pt;
+.week-hp-icon {
+    icon-size: 14px;
     color: #ff4d6d;
+}
+
+.week-hp-icon.complete {
+    color: #ffd700;
 }
 
 /* Marco exterior: borde doble al estilo 8/16 bits */

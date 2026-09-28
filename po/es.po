@@ -13,36 +13,36 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. Translators: abbreviated weekday shown in the top bar
-#: extension.js:32
+#: indicator.js:32
 msgid "Mon"
 msgstr "Lun"
 
 #. Translators: abbreviated weekday shown in the top bar
-#: extension.js:34
+#: indicator.js:34
 msgid "Tue"
 msgstr "Mar"
 
 #. Translators: abbreviated weekday shown in the top bar
-#: extension.js:36
+#: indicator.js:36
 msgid "Wed"
 msgstr "Mié"
 
 #. Translators: abbreviated weekday shown in the top bar
-#: extension.js:38
+#: indicator.js:38
 msgid "Thu"
 msgstr "Jue"
 
 #. Translators: abbreviated weekday shown in the top bar
-#: extension.js:40
+#: indicator.js:40
 msgid "Fri"
 msgstr "Vie"
 
-#: extension.js:128
-msgid "★ GOAL!"
-msgstr "★ ¡META!"
+#: indicator.js:128
+msgid "GOAL!"
+msgstr "¡META!"
 
 #. Translators: weekday and week progress, e.g. "Wed 46%"
-#: extension.js:131
+#: indicator.js:131
 #, javascript-format
 msgid "%s %d%%"
 msgstr "%s %d%%"
