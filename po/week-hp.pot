@@ -1,0 +1,53 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the week-hp package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: week-hp\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-28 10:23-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Translators: abbreviated weekday shown in the top bar
+#: extension.js:32
+msgid "Mon"
+msgstr ""
+
+#. Translators: abbreviated weekday shown in the top bar
+#: extension.js:34
+msgid "Tue"
+msgstr ""
+
+#. Translators: abbreviated weekday shown in the top bar
+#: extension.js:36
+msgid "Wed"
+msgstr ""
+
+#. Translators: abbreviated weekday shown in the top bar
+#: extension.js:38
+msgid "Thu"
+msgstr ""
+
+#. Translators: abbreviated weekday shown in the top bar
+#: extension.js:40
+msgid "Fri"
+msgstr ""
+
+#: extension.js:128
+msgid "★ GOAL!"
+msgstr ""
+
+#. Translators: weekday and week progress, e.g. "Wed 46%"
+#: extension.js:131
+#, javascript-format
+msgid "%s %d%%"
+msgstr ""
