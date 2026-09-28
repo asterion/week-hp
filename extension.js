@@ -4,9 +4,8 @@
 // Do NOT upload to extensions.gnome.org (EGO) unless you understand JavaScript
 // and can maintain this code.
 //
-// Week HP: barra de vida estilo videojuego 2D de plataformas en la barra superior
-// de GNOME Shell (50). Se llena de lunes a viernes; al terminar el viernes se
-// cumplen las metas de la semana.
+// Week HP: a retro 2D platformer health bar in the GNOME Shell top panel.
+// It fills up from Monday to Friday; when Friday ends, the weekly goals are complete.
 
 import {Extension} from 'resource:///org/gnome/shell/extensions/extension.js';
 import * as Main from 'resource:///org/gnome/shell/ui/main.js';

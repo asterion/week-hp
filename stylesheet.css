@@ -1,4 +1,4 @@
-/* Week HP: barra de vida pixelada de 5 segmentos (lunes a viernes) */
+/* Week HP: pixel-art health bar with 5 segments (Monday to Friday) */
 
 .week-hp-box {
     spacing: 6px;
@@ -13,7 +13,7 @@
     color: #ffd700;
 }
 
-/* Marco exterior: borde doble al estilo 8/16 bits */
+/* Outer frame: solid 8/16-bit style border */
 .week-hp-frame {
     spacing: 2px;
     padding: 2px;
@@ -22,14 +22,14 @@
     border-radius: 0;
 }
 
-/* Cada segmento es un día; el hueco vacío se ve oscuro */
+/* Each segment is one day; the empty part stays dark */
 .week-hp-segment {
     width: 14px;
     height: 10px;
     background-color: #3a3a3a;
 }
 
-/* Relleno del segmento; su ancho lo fija el código */
+/* Segment fill; its width is set from indicator.js */
 .week-hp-fill {
     height: 10px;
     background-color: #e63946;

@@ -15,7 +15,7 @@ import * as PanelMenu from 'resource:///org/gnome/shell/ui/panelMenu.js';
 
 import {WORK_DAYS, getWeekProgress} from './weekProgress.js';
 
-// Debe coincidir con el ancho de .week-hp-segment
+// Must match the width of .week-hp-segment
 const SEGMENT_WIDTH = 14;
 const UPDATE_INTERVAL_S = 60;
 
@@ -51,7 +51,7 @@ class WeekHpIndicator extends PanelMenu.Button {
         });
         box.add_child(this._icon);
 
-        // Un segmento por día laborable, con un relleno de ancho variable dentro
+        // One segment per work day, each holding a fill of variable width
         const frame = new St.BoxLayout({
             style_class: 'week-hp-frame',
             y_align: Clutter.ActorAlign.CENTER,
@@ -83,7 +83,7 @@ class WeekHpIndicator extends PanelMenu.Button {
         const {days, today, total} = getWeekProgress(GLib.DateTime.new_now_local());
         const complete = total >= 1;
 
-        // Como en los juegos: rojo con poca vida, amarillo a media, verde casi llena
+        // Like in games: red when low, yellow at half, green when nearly full
         let level = '';
         if (complete)
             level = 'complete';

@@ -6,20 +6,20 @@
 
 export const WORK_DAYS = 5;
 
-// Fuera de este horario el día cuenta vacío (antes) o lleno (después).
-// Con 0 y 24 cada día avanza durante las 24 horas.
+// Outside these hours a day counts as empty (before) or full (after).
+// With 0 and 24 each day progresses over the whole 24 hours.
 const DAY_START_HOUR = 9;
 const DAY_END_HOUR = 18;
 
 /**
- * Avance de la semana laboral en un momento dado.
+ * Work week progress at a given time.
  *
- * @param {GLib.DateTime} now - fecha y hora local
- * @returns {{days: number[], today: ?number, total: number}} avance de cada día (0..1),
- *   índice del día actual (null en fin de semana) y avance total (0..1)
+ * @param {GLib.DateTime} now - local date and time
+ * @returns {{days: number[], today: ?number, total: number}} progress of each day (0..1),
+ *   index of the current day (null on weekends) and total progress (0..1)
  */
 export function getWeekProgress(now) {
-    const weekday = now.get_day_of_week() - 1; // 0 = lunes … 6 = domingo
+    const weekday = now.get_day_of_week() - 1; // 0 = Monday … 6 = Sunday
 
     if (weekday >= WORK_DAYS)
         return {days: Array(WORK_DAYS).fill(1), today: null, total: 1};
