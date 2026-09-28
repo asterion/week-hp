@@ -1,5 +1,5 @@
 UUID = week-hp@asterion
-DOMAIN = week-hp
+DOMAIN = $(UUID)
 LANGS = $(basename $(notdir $(wildcard po/*.po)))
 MO_FILES = $(foreach l,$(LANGS),locale/$(l)/LC_MESSAGES/$(DOMAIN).mo)
 
